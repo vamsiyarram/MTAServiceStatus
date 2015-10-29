@@ -18,7 +18,6 @@ namespace MTAServiceStatus.Resolvers
                 string status = source.Status.Replace(" ", "_").ToUpper();
                 return (ServiceStatus)Enum.Parse(typeof(ServiceStatus), status);
             }
-
             return ServiceStatus.UNKNOWN;
         }
     }
